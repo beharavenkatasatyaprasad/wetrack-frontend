@@ -5,7 +5,7 @@ sendotpBtn.addEventListener('click', async () => {
     sendotpBtn.disabled = true;
     sendotpBtn.innerHTML = 'sending...'
     AdminLoginForm.innerHTML = ""
-    let response = await fetch('http://localhost:5000/admin/requestLogin', {
+    let response = await fetch('https://wetrack-backend.herokuapp.com/admin/requestLogin', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ async function Checkotp(password) {
         otp: password
     }
     adminloginbtn.innerHTML = 'Loading...'
-    let response = await fetch('http://localhost:5000/admin/adminlogin', {
+    let response = await fetch('https://wetrack-backend.herokuapp.com/admin/adminlogin', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {

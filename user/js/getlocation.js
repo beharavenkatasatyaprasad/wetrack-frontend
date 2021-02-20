@@ -5,7 +5,7 @@ var map;
 async function fetchData(map) {
   const jwt = window.localStorage.getItem("jwt");
   if (jwt) {
-    let response = await fetch(`http://localhost:5000/vehicle/${jwt}`, {
+    let response = await fetch(`https://wetrack-backend.herokuapp.com/vehicle/${jwt}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

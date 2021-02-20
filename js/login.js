@@ -18,7 +18,7 @@ async function Check(email, password) {
         email: email,
         password: password
     }
-    let response = await fetch('http://localhost:5000/login', {
+    let response = await fetch('https://wetrack-backend.herokuapp.com/login', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {

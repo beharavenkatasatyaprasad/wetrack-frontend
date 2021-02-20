@@ -19,7 +19,7 @@ async function register() {
         vtype:vtype
       }
       console.log(data);
-      let response = await fetch("http://localhost:5000/admin/register", {
+      let response = await fetch("https://wetrack-backend.herokuapp.com/admin/register", {
         body: JSON.stringify(data),
         method: "POST",
         headers: {
