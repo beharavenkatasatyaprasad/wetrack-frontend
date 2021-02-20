@@ -1,0 +1,360 @@
+.fade-in,
+body {
+    animation: fadeInAnimation ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-buttons {
+    color: rgb(255, 255, 255);
+    border-radius: 0% !important;
+    border: 0px solid white;
+    transition: all 0.5s;
+}
+
+.nav-buttons:hover {
+    background: rgba(0, 0, 0, 0.651);
+    color: rgb(255, 255, 255);
+}
+
+.nav-buttons:focus {
+    background: hsl(214, 37%, 13%);
+    color: rgb(255, 255, 255);
+}
+
+.nav-item>.active {
+    background-color: hsl(214, 93%, 28%);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-toggler {
+    color: hsl(0, 0%, 100%);
+}
+
+.link-input-div,
+.input-div {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    z-index: 1;
+}
+
+#particle-js canvas {
+    height: 100vh;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed !important;
+    background-size: cover;
+    background-color: #2EB2FF;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.link-input-div h1 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.link-input-div p {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 5px 0 35px;
+    text-align: center;
+}
+
+.link-input-div .url_area {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -1px;
+}
+
+.link-input-div input {
+    width: 100%;
+    border: 1px solid #d9dadb;
+    border-radius: 5px;
+    transition: all .25s ease-out;
+}
+
+.link-input-div input:hover,
+.link-input-div input:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.link-input-div button {
+    width: auto;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    background: hsl(214, 93%, 28%);
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .25s ease-out;
+}
+
+.link-input-div button:hover {
+    background-color: rgb(24, 151, 98);
+}
+
+.link-input-div button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.result-div {
+    margin: 2%;
+}
+
+.sillyfied p {
+    border: 1px solid black;
+    margin: 3px;
+    padding: 1%;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.link-title {
+    font-size: 180%;
+    padding-top: 1%;
+}
+
+.actual-link {
+    opacity: 0.8;
+    font-size: 110%;
+}
+
+.sillified-link {
+    font-size: 130%;
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cred-heading {
+    color: hsl(0, 0%, 100%);
+    font-variant: small-caps;
+    font-size: 2.5em;
+}
+
+.login-card,
+.password-card {
+    background-color: rgba(247, 247, 247);
+}
+
+.form-group input {
+    border: 0.5px solid #053f8a;
+    transition: all 0.1s ease-out;
+}
+
+.form-group input:hover,
+.form-group input:focus {
+    border: 2px solid hsl(214, 93%, 28%) !important;
+}
+
+.form-group button {
+    background: hsl(214, 93%, 28%);
+    color: #f5f5f5;
+    letter-spacing: normal;
+    transition: all 0.3s;
+}
+
+.form-group button:hover {
+    background: rgba(0, 0, 0, 0.781);
+    letter-spacing: 2.5px;
+    color: #f5f5f5;
+}
+
+#message {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 999;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.new-pwd-input-div,
+.signup-input-div {
+    padding-top: 1% !important;
+}
+
+.short-link {
+    background-color: #3b589800 !important;
+}
+
+.links-card a {
+    color: hsl(300, 24%, 80%);
+}
+
+.my-links-btns button {
+    background-color: transparent;
+    color: hsl(300, 24%, 80%);
+    border: 1px solid transparent !important;
+    border-radius: 0px;
+    height: 50px;
+    transition: all 0.5s ease-out;
+}
+
+.my-links-btns button:hover {
+    letter-spacing: 1.8px;
+    background-color: hsl(182, 25%, 50%);
+    color: rgb(0, 0, 0);
+    height: 50px;
+}
+
+.links-card {
+    background-color: hsla(213, 100%, 16%, 0.884);
+    border: 1px solid rgba(128, 128, 128, 0.63) !important;
+    margin: 1%;
+    transition: all 0.5s ease-out;
+}
+
+.links-card:hover {
+    background-color: hsl(213, 100%, 16%);
+    border: 1px solid rgba(128, 128, 128, 0.63) !important;
+}
+
+.description {
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: hsl(182, 25%, 50%);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    font-size: 14px;
+    font-family: "Josefin Sans";
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.7;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dashboard-container{
+    color: rgb(255, 255, 255);
+    margin: 5%;
+    border-radius: 10px;
+}
+
+
+
+.data{
+    font-family: "Kaushan Script";
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-out;
+}
+
+.data-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 670%;
+    margin: 5%;
+    transition: all 0.5s ease-out;
+}
+
+.data-container:hover {
+    font-size: 700%;
+    margin: 2%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  
+.data-description{
+    letter-spacing: 1.5px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: x-large;
+    background-color:  rgba(0, 128, 128, 0.493);
+}
+
+.navbar{
+    background-color: #2EB2FF !important;
+}
+@media (max-width: 575.98px) {
+    .cred-heading{
+        font-size: 1.5em;
+    }
+}
+
+.mapContainer{
+    height: 75vh;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.btn-card{
+    margin: auto;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%)}
+
+.btn-grad {
+   padding: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 0px 0px 10px 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
